@@ -36,6 +36,15 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --primary-color: #233876; /* プライマリカラー */
+  --secondary-color: #ff6347; /* セカンダリカラー */
+  --background-color: #f0f0f0; /* 背景色 */
+  --text-color: #333; /* テキスト色 */
+  --header-bg-color: #233876; /* ヘッダー背景色 */
+  --header-text-color: #fff; /* ヘッダーテキスト色 */
+  --sidebar-bg-color: #233876; /* サイドバー背景色 */
+  --sidebar-text-color: #fff; /* サイドバーテキスト色 */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -81,16 +90,16 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
+  background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb)); */
+    rgb(var(--background-start-rgb));
 }
 
 a {
-  color: inherit;
+  color: var(--primary-color); /* リンク色を変更 */
   text-decoration: none;
 }
 
